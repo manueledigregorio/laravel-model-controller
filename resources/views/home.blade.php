@@ -13,7 +13,7 @@
                       <p class="card-text">Nazionalità: {{$movie->nationality}}</p>
                       <p class="card-text">Data uscita: {{$movie->date}}</p>
                       <p class="card-text">voto: {{$movie->vote}}</p>
-                      <a href="#" class="btn btn-primary">Vai</a>
+                      <a href="{{route('detail', ['id'=> $movie->id])}}" class="btn btn-primary">Vai</a>
                     </div>
                   </div>
             </div>
